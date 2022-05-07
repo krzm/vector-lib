@@ -4,14 +4,14 @@ public partial struct Vector2
     : IComparable
     , IComparable<Vector2>
 {
-    public int CompareTo(object other)
+    public int CompareTo(object? other)
     {
         if (other is Vector2)
         {
             return CompareTo((Vector2)other);
         }
         throw new ArgumentException(
-            $"{NonVectorComparision}{Environment.NewLine}{ArgumentType}{other.GetType().ToString()}", nameof(other));
+            $"{NonVectorComparision}{Environment.NewLine}{ArgumentType}{other?.GetType().ToString()}", nameof(other));
     }
 
     public int CompareTo(Vector2 other)

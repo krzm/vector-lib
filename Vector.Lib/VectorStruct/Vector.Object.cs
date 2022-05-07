@@ -5,7 +5,7 @@ public partial struct Vector2
 {
     public override string ToString() => $"({X}, {Y})";
 
-    public override bool Equals(object other)
+    public override bool Equals(object? other)
     {
         if (other is Vector2 otherVector)
         {
