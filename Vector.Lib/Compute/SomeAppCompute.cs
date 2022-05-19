@@ -1,7 +1,6 @@
 namespace Vector.Lib;
 
-//todo: clean or delete
-public static class SomeAppCompute
+public static class VectorCompute
 {
     public static Vector2 ClosesestPoint(
         Vector2 lineMassCenter

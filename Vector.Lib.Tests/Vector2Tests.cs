@@ -61,7 +61,7 @@ public class Vector2Tests
         var segV = new Vector2(vX, vY);
         var expected = new Vector2(expectedX, expectedY);
 
-        var acctual = SomeAppCompute.ClosesestPoint(lineMassCenter, lineSecondPoint, segV, projV);
+        var acctual = VectorCompute.ClosesestPoint(lineMassCenter, lineSecondPoint, segV, projV);
         
         Assert.Equal(expected, acctual);
     }
